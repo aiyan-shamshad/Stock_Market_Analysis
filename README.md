@@ -4,7 +4,7 @@ This project predicts whether a stock’s **closing price** will be higher than 
 
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 - **File**: `stock_market_june2025.csv`
 - **Size**: 1762 rows × 14 columns
@@ -15,7 +15,7 @@ This project predicts whether a stock’s **closing price** will be higher than 
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 The goal is to classify:
 
@@ -29,7 +29,7 @@ This forms a **binary classification task**:
 
 ---
 
-## 🧼 Data Preprocessing
+##  Data Preprocessing
 
 - Converted `Date` to datetime format
 - Created a `Target` variable based on price movement
@@ -39,7 +39,7 @@ This forms a **binary classification task**:
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 - Correlation heatmap shows:
   - High correlation among price-based features (Open, High, Low)
@@ -48,7 +48,7 @@ This forms a **binary classification task**:
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 | Model                | Tuning Method     |
 |---------------------|------------------|
@@ -59,7 +59,7 @@ This forms a **binary classification task**:
 
 ---
 
-## 🧪 Evaluation Metrics
+##  Evaluation Metrics
 
 Each model is evaluated on:
 
@@ -73,7 +73,7 @@ Each model is evaluated on:
 
 ## 🔧 Hyperparameter Tuning
 
-### 🔹 Logistic Regression
+###  Logistic Regression
 ```python
 param_grid_logreg = {
     'C': [0.01, 0.1, 1, 10, 100],
@@ -82,7 +82,7 @@ param_grid_logreg = {
 }
 ```
 
-### 🔹 Random Forest
+###  Random Forest
 ```python
 param_grid_rf = {
     'n_estimators': [100, 200],
@@ -97,7 +97,7 @@ param_grid_rf = {
 
 ---
 
-## 🏆 Results
+##  Results
 
 Final classification reports helped select the best model based on performance.Logistic Regression has higher accuracy in this instance.
 
@@ -109,7 +109,7 @@ print(classification_report(y_test, model.predict(X_test)))
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone this repository**:
 ```bash
@@ -137,7 +137,6 @@ jupyter notebook Stock_Market_Analysis.ipynb
 
 ## 👤 Author
 
-**Your Name**  
 GitHub: [@aiyan-shamshad](https://github.com/aiyan-shamshad)
 
 ---
